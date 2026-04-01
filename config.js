@@ -40,12 +40,12 @@ global.ucapan = function() {
   if (time >= 10 && time < 15) return '🌞 Selamat Siang'
   if (time >= 15 && time < 18) return '🌇 Selamat Sore'
   if (time >= 18 || time < 4) return '🌙 Selamat Malam'
-  return '🪷 Selamat Dinihari'
+  return '🪷 Selamat Dini hari'
 }
 
 global.config = {
   /*============== INFO AUTO UPDATE GITHUB ==============*/
-    cekupdate: false,
+    cekupdate: false, // ganti true auto update ketika restart
     /*============== INFO LINK ==============*/
     instagram: 'https://instagram.com/',
     github: 'https://github.com/',
@@ -60,29 +60,19 @@ global.config = {
 
     /*============== STAFF ==============*/
     owner: [
-[ '6285282530851', 'RexxHayanasiDEV', true ] // Ganti Nomer Lu Sama Nama Lu
+[ '6285924647929', 'RexxHayanasi', true ] // Ganti Nomer Lu Sama Nama Lu
 ],
-
-
+    /*============== MAINTENANCE REPORT =========*/
+   developer: [
+     [ '6285924647929', 'RexxHayanasi', true ]
+     ],
+  
     /*============== BOT ==============*/
     namebot: "Elaina - MultiDevice",
     
     /*============== PAIRING ==============*/
     pairingNumber: "-", // Nomor Bot yang mau di pairing
     pairingAuth: true, // False kalau mau via QR Code [ Ga disaranin Jadiin False ]
-
-    /*============== API ==============*/
-    APIs: {
-        lol: 'https://api.lolhuman.xyz',
-        rose: 'https://api.itsrose.rest',
-        xzn: 'https://skizo.tech',
-    },
-
-    APIKeys: {
-        'https://api.lolhuman.xyz': '-',
-        'https://api.itsrose.rest': '-',
-        'https://skizo.tech': '-'
-    },
 
     /*============== TEXT ==============*/
     watermark: 'Elaina - MultiDevice',
@@ -93,21 +83,13 @@ global.config = {
     stickpack: 'Made With',
     stickauth: 'Elaina-BOT',
 
-    // Untuk fitur topup [ Need IP VPS ] & pembayaran premium otomatis,
-    OK: {
-        ID: "", // Okeconnect Merchant ID
-        Pin: "", // Okeconnect PIN
-        Pass: "", // Okeconnect Password
-        Apikey: "" // Okeconnect Apikey
-    }
-}
 
 
 /*============== WATERMARK ==============*/
 global.wm = '                「 Elaina 𝙱𝙾𝚃 汉  」' // wm1
 global.wm2 = '꒷︶꒷꒥꒷ ‧₊˚ ꒰ฅ˘ᴇʟᴀɪɴᴀ˘ฅ ꒱ ‧₊˚꒷︶꒷꒥꒷' // wm2
-global.wm3 = '• elaina ᴍᴜʟᴛɪᴅᴇᴠɪᴄᴇ' // wm3
-global.namedoc = 'sᴀɴsᴍᴀʜɪʀᴜ' // nama document
+global.wm3 = '• Elaina ᴍᴜʟᴛɪᴅᴇᴠɪᴄᴇ' // wm3
+global.namedoc = 'Elaina' // nama document
 global.titlebot = '🎋 ┊ sɪᴍᴘʟᴇ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ'
 global.botdate = `• ᴅᴀʏ's: ${week} ${date}`
 global.bottime = `ᴛɪᴍᴇ: ${wktuwib}`
@@ -136,7 +118,7 @@ global.wait = '🚩 ʟᴏᴀᴅɪɴɢ ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ... '
 global.eror = '```404 error```'
 global.dtu = 'ɪɴꜱᴛᴀɢʀᴀᴍ'
 global.dtc = 'ᴄᴀʟʟ ᴏᴡɴᴇʀ'
-global.phn = '+62 851-7727-3730'
+global.phn = '+62 859-2464-7929'
 
 global.loading = (m, conn, back = false) => {
     if (!back) {
