@@ -1,0 +1,25 @@
+name: Unzip Plugin File
+
+on:
+  push:
+    branches:
+      - master  
+
+jobs:
+  unzip-process:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Extract ZIP File
+        run: |
+          unzip -o plugins/_/_.zip -d plugins/_/
+          
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@://github.com"
+          git add .
+          git commit -m "Auto-unzip plugin file" || echo "No changes to commit"
+          git push
