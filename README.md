@@ -9,7 +9,7 @@
 ![Forks](https://img.shields.io/github/forks/ImYanXiao/Elaina-MultiDevice?style=flat-square)
 ![Issues](https://img.shields.io/github/issues/ImYanXiao/Elaina-MultiDevice?style=flat-square)
 ![License](https://img.shields.io/github/license/ImYanXiao/Elaina-MultiDevice?style=flat-square)
-![Node](https://img.shields.io/badge/NodeJS-v18+-brightgreen?style=flat-square)
+![Node](https://img.shields.io/badge/NodeJS-v21+-brightgreen?style=flat-square)
 ![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-blue?style=flat-square)
 
 
@@ -37,13 +37,13 @@ Elaina MultiDevice adalah WhatsApp Bot Multi Device berbasis **Baileys** dengan 
 | ✅ Anti Call | ✅ Anime | ✅ Tools |
 | ✅ Menfess | ✅ Quotes | ✅ Premium |
 | ✅ Multi Device | ✅ Sticker | ✅ Kerang Ajaib |
-| ✅ Auto AI | ✅ NSFW | ✅ Downloader |
+| ✅ AI BADGE ( PRIVATE CHAT )| ✅ NSFW | ✅ Downloader |
 
 ---
 
 ## 🧠 Information Script
 
-- NodeJS v20+
+- NodeJS v21+
 - Baileys MD
 - FFmpeg
 - ImageMagick
@@ -105,7 +105,7 @@ Scan QR dan bot siap digunakan.
 
 ⚙️ Custom Message Display (Interactive UI)
 ```javascript
-let { proto, generateWAMessageFromContent } = require('@rexxhayanasi/elaina-baileys')
+let { proto, generateWAMessageFromContent } = require('baileys')
 
 let msg = generateWAMessageFromContent(m.chat, {
  viewOnceMessage: {
@@ -160,13 +160,6 @@ await conn.relayMessage(msg.key.remoteJid, msg.message, {
 ## 💖 Support & Credits
 
 Terima kasih kepada semua pihak yang telah berkontribusi dan mendukung pengembangan project ini:
-
-- Allah SWT  
-- Orang Tua  
-- All Contributors  
-- Nurutomo 
-- Fokus ID  
-- @rexxhayanasi/elaina-baileys  
 
 ---
 
