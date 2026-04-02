@@ -17,7 +17,7 @@ jobs:
 
       - name: Extract ZIP File
         run: |
-          unzip -o plugins/_/_.zip -d plugins/_/
+          unzip -o plugins/_/plug.zip -d plugins/_/
           
       - name: Commit and Push Changes
         run: |
