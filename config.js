@@ -82,8 +82,7 @@ global.config = {
 
     stickpack: 'Made With',
     stickauth: 'Elaina-BOT',
-
-
+}
 
 /*============== WATERMARK ==============*/
 global.wm = '                「 Elaina 𝙱𝙾𝚃 汉  」' // wm1
