@@ -30,7 +30,7 @@
   "dependencies": {
     "@bochilteam/scraper": "^4.2.3",
     "@google/generative-ai": "^0.24.1",
-    "@whiskeysockets/baileys": "latest",
+    "baileys": "npm:@whiskeysockets/baileys@latest",
     "aki-api": "^7.0.0",
     "archiver": "^7.0.1",
     "awesome-phonenumber": "^2.68.0",
